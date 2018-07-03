@@ -1,2 +1,3 @@
-# Ang5
-deep-dive to ang5
+<h1>Ang6</h1>
+A deep dive into angular (currently ver 6)
+
