@@ -4,7 +4,7 @@
       <div class="col-lg-4">
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1">email</span>
-          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" (keyup)="onKey($event)">
+          <input type="email" class="form-control" placeholder="Username" aria-describedby="basic-addon1" (keyup)="onKey($event)">
         </div>
         <!-- button submit -->
         <button type="submit" class="btn btn-info btn-med" (click)="onValidate()"> <!-- event binding -->
@@ -12,9 +12,10 @@
         </button>
         <!-- success message -->
         <div class="alert alert-success" role="alert" [hidden]="successMsg"> <!-- property binding -->
-          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           <span class="sr-only">Success:</span>
           Welcome {{ user }}!
+          <app-user></app-user>
         </div>
 
         <!-- error message -->

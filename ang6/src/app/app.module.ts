@@ -4,9 +4,11 @@ import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { UserComponent } from "./user/user.component";
+
 
 @NgModule({
-  declarations: [AppComponent, ServerComponent],
+  declarations: [AppComponent, ServerComponent, UserComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
