@@ -16,6 +16,7 @@ export class ServerComponent implements OnInit {
 
   //email
   user: string = "gels@email.com";
+  validUser = "Gel";
 
 
   constructor() {}
@@ -31,6 +32,7 @@ export class ServerComponent implements OnInit {
 
   onValidate() {
     if (this.user === "gels@email.com") {
+      this.user = this.validUser;
       console.log(this.user);
       this.successMsg = false;
       this.failureMsg = true;
